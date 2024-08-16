@@ -1,0 +1,22 @@
+2. Number Triangular Pattern Problem
+ 1
+ 2 2
+ 3 3 3
+ 4 4 4 4
+Code In Java :
+public class Prac {
+ public static void main(String[] args) { 
+ int num = 4;
+ int count = 0;
+ for (int i = 0; i < 4 ; i++) {
+ for (int j = 0; j < num - i ; j++) {
+ System.out.print(" ");
+ }
+ count++;
+ for (int j = 1; j <= count; j++) {
+ System.out.print(count +" ");
+ }
+ System.out.println("");
+ }
+ }
+}

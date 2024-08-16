@@ -1,0 +1,35 @@
+6.Zero - One Triangle Problem
+ 1
+ 0 1
+ 1 0 1
+ 0 1 0 1
+Code In Java :
+public class Prac {
+ public static void main(String[] args) {
+ int a = 0,b = 1;
+ for (int i = 1; i <= 4; i++) {
+ if( i % 2 == 0){
+ for (int j = 1; j <= i; j++) {
+ if( j % 2 == 0){
+ System.out.print(b + " ");
+ }
+ else{
+ System.out.print(a + " ");
+ }
+ }
+ System.out.println("");
+ }
+ else{
+ for (int j = 1; j <= i; j++) {
+ if( j % 2 == 0){
+ System.out.print(a + " ");
+ }
+ else{
+ System.out.print(b + " ");
+ }
+ }
+ System.out.println("");
+ }
+ }
+ }
+}
